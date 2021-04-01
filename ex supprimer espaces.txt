@@ -1,0 +1,27 @@
+debut supprimerlesespaces
+DEBUT VARIABLES LOCALES
+CONST TAILLE :N<- 20
+VAR tab :N [TAILLE]
+VAR tab2 :N [TAILLE]
+VAR espace :C <-' '
+VAR cpt :N <- 1
+VAR cpt2 :N <- 0
+VAR provisoire : C <-""
+
+FIN VARIABLES LOCALES
+
+POUR cpt ALLANT DE cpt A TAILLE
+     
+	 IF (tab[cpt] = espace)
+	 alors 
+	            cpt2 <-cpt
+	          POUR cpt2 ALLANT de cpt à (TAILLE)
+			        provisoire <- tab[cpt]
+			        tab[cpt2]    <-  tab[(cpt2)+1]
+			     
+			        tab[TAILLE]  <-  provisoire
+			        
+			   cpt SUIVANT
+cpt SUIVANT
+
+fin supprimerlesespaces
