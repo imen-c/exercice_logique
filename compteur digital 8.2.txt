@@ -1,0 +1,36 @@
+debut compteurdigital
+DEBUT VARIABLES LOCALES
+VAR TAILLE :N <-3
+tab :N [TAILLE]
+cpt :N <- 0
+cpt2 :N <- 0
+cpt3 :N <- 0
+VAR nombre1 :N<- 0
+VAR nombre2 :N<-0
+VAR nombre3 :N<-0
+
+
+FIN VARIABLES LOCALES 
+
+      
+			  POUR cpt3 ALLANT de 0 A 9
+			        nombre3 <- cpt3
+			        POUR cpt2 ALLANT DE 0 A 9
+	                nombre2 <-cpt2
+			             POUR cpt ALLANT DE 0 A 9 
+                    nombre1<-cpt
+
+			                AFFICHER nombre1 , nombre2 , nombre3
+							Cpt SUIVANT
+			           cpt2 SUIVANT
+			  cpt3 SUIVANT
+
+       cpt2 SUIVANT
+            
+
+
+
+
+
+
+fin compteur digital
