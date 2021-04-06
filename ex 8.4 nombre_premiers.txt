@@ -4,6 +4,8 @@ VAR compteur :N <- O
 VAR testeur :N <- 1
 VAR  i :N <- 0 
 VAR compteur2 :N <- 0
+VAR tableau :N <- [TAILLE]
+VAR TAILLE :N <- 100
 FIN VARIABLES LOCALES
 
 TANT QUE compteur< 101
@@ -13,8 +15,7 @@ TANT QUE compteur< 101
 				   SI testeur MOD 2 = 0 
 				   alors
 				         testeur <-testeur+1
-				        
-				     SINON 
+				   SINON 
 						POUR i ALLANT DE 1 A testeur
 						 SI  testeur MOD i = 0 
 						     compteur2<- compteur2 +1
@@ -23,6 +24,7 @@ TANT QUE compteur< 101
 				                 alors
 				                    AFFICHE testeur + "est un nombre premier"
 					              compteur <- compteur +1
+								  tabeau[compteur] <-testeur
 				         FINSI
 				  FINSI
 		
