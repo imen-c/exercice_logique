@@ -7,21 +7,24 @@ VAR compteur2 :N <- 0
 FIN VARIABLES LOCALES
 
 TANT QUE compteur< 101
-                testeur <- testeur +1
-		        i<- 0
-				compteur2 <- 0
-		           POUR i ALLANT DE 1 A testeur
-				   SI testeur MOD i = 0 
+                
+		        compteur2 <- 0
+					          
+				   SI testeur MOD 2 = 0 
 				   alors
-				        compteur2<- compteur2 +1
-				   FINSI
-				   i SUIVANT
-				   SI compteur2 =2
-				   alors
-				     AFFICHE testeur + "est un nombre premier"
-					 compteur <- compteur +1
-				   FINSI
-		
+				         testeur <-testeur+1
+				        
+				     SINON 
+						POUR i ALLANT DE 1 A testeur
+						 SI  testeur MOD i = 0 
+						     compteur2<- compteur2 +1
+                         i SUIVANT
+						 SI compteur2 =2
+				                 alors
+				                    AFFICHE testeur + "est un nombre premier"
+					              compteur <- compteur +1
+				         FINSI
+				  FINSI
 		
 FIN TANT QUE 
 
