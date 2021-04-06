@@ -9,8 +9,9 @@ FIN VARIABLES LOCALES
 
 
    POUR nombre  ALLANT DE 2 A (limite-1)
-        POUR nombreinferieur ALLANT DE 1 A (nombre-1)
-		        SI nombreMODnombreinferieur = 0
+          somme <- 0
+        POUR nombreinferieur ALLANT DE 1 A (nombre/2)
+		        SI nombre MOD nombreinferieur = 0
 		        alors
 		        somme<-somme + nombreinferieur
 		        FINSI
