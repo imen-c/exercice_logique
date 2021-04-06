@@ -1,0 +1,33 @@
+debut moyenneminmax
+DEBUT VARIABLES LOCALES
+tableau :N [TAILLE1][TAILLE2]
+VAR compteur :N <- 0
+VAR compteur2 :N <- 0
+VAR somme :N <- 0 
+VAR MAX : N <-0
+VAR MIN : N <-0
+FIN VARIABLES LOCALES
+
+
+POUR compteur ALLANT DE 1 A TAILLE1
+             somme <-0
+			 MAX<- tableau[compteur][1]
+			 MIN<- tableau[compteur][1]
+           TANT QUE compteur2 =< TAILLE2
+		   somme <- somme +tableau[compteur][compteur2]
+		         SI tableau[compteur][compteur2]> MAX
+				 alors 
+				       MAX <- tableau[compteur][compteur2]
+				 FINSI
+				 SI tableau[compteur][compteur2]< MIN
+				 alors
+				      MIN <- tableau [compteur][compteur2]
+				 FINSI
+		   FIN TANT QUE 
+		   AFFICHE" à la ligne"+ compteur +"la moyenne est de "+ (somme/TAILLE2)
+		   AFFICHE"le maximum est " + MAX
+		   AFFICHE"le minimum est " + MIN 
+		  
+compteur SUIVANT 
+
+fin moyenneminmax
