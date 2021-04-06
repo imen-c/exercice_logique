@@ -1,0 +1,20 @@
+debut copietableau
+DEBUT VARIABLES LOCALES 
+tableau2dim :N <- [TAILLE1][TAILLE2]
+tableau     :N <- [TAILLE3]
+VAR compteur1 :N <-0
+VAR compteur2 :N <-0
+VAR TAILLE1 :N<-0
+VAR TAILLE2 :N<-0
+VAR TAILLE3 :N<-0
+FIN VARIABLES LOCALES
+
+TAILLE3 <- (TAILLE1*TAILLE2)
+
+POUR compteur1 ALLANT DE 1 A TAILLE3
+    
+                  POUR compteur2 ALLANT de 1 A TAILLE2 
+				  tableau[compteur1] <- tableau2dim[(compteur1 DIV(TAILLE2)+1)][compteur2]
+				  compteur2 SUIVANT
+compteur1 SUIVANT 
+fin copietableau
