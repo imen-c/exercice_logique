@@ -1,22 +1,16 @@
 debut diagonalecarre
 DEBUT VARIABLES LOCALES
+CONST TAILLE :N <- 4
 VAR tableau :N <- [TAILLE][TAILLE]
-VAR CONST TAILLE :N <- 4
-
 VAR compteur  :N <-0
-VAR compteur2 :N <-0
+
 FIN VARIABLES LOCALES
 
 POUR compteur ALLANT DE 1 A TAILLE
-tableau[compteur][TAILLE]
-        POUR compteur2 ALLANT DE 1 A TAILLE
-		   SI compteur= compteur2
-		   alors
-		      tableau[compteur][compteur2] <- 1
-			
-		   FINSI
-		   tableau[compteur][(TAILLE+1)-compteur] <-2
-		compteur2 SUIVANT
+
+		      tableau[compteur][compteur] <- 1
+		      tableau[compteur][(TAILLE+1)-compteur] <-2
+	
 
 compteur SUIVANT 
 
