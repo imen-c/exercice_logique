@@ -1,0 +1,21 @@
+debut rotationmatrice
+DEBUT VARIABLES LOCALES
+VAR matrice :N <- [TAILLE][TAILLE]
+VAR TAILLE :N 
+VAR compteur :N <-0
+VAR indice2 :N <-0
+FIN VARIABLES LOCALES
+
+
+
+
+POUR compteur ALLANT DE 1 A TAILLE
+
+      
+        POUR indice2 ALLANT DE 1 A TAILLE
+		 matrice[compteur][indice2] <- matrice[indice2][((TAILLE)-compteur)+1]
+		indice2 SUIVANT
+		
+compteur SUIVANT
+
+fin rotationmatrice
