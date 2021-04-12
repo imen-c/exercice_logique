@@ -1,18 +1,41 @@
-debut structure
-DEBUT VARIABLES LOCALES
-
-CONST nombrestagiaire :N <- 10
 STRUCTURE stagiaire
 VAR nom: T
 VAR prenom: T
 VAR naissance:Date
 FIN STRUCTURE
+STRUCTURE date
+VAR jour: N
+VAR mois: N
+VAR annee:N
+FIN DATE 
 
+
+
+debut structure
+DEBUT VARIABLES LOCALES
+
+CONST nombrestagiaire :N <- 10
+VAR compteur :N 
 VAR tableau : stagiaire
 FIN VARIABLES LOCALES
 
 POUR compteur ALLANT de 1 A nombrestagiaire
 tableau[compteur]<- CREER stagiaire
+tableau[compteur]<- CREER date
+AFFICHER"nom?"
+SAISIR stagiaire[compteur].nom
+AFFICHER"prenom?"
+SAISIR stagiaire[compteur].prenom
+AFFICHER"jour?"
+SAISIR stagiaire[compteur].date.jour
+AFFICHER"mois?"
+SAISIR stagiaire[compteur].date.mois
+AFFICHER"annee?"
+SAISIR stagiaire[compteur].date.annee
+
+tableau[compteur]<-stagiaire[compteur]
+tableau[date]<-date[compteur] 
+
 FINPOUR
 
 
