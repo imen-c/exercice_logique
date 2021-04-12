@@ -15,6 +15,7 @@ debut structure
 DEBUT VARIABLES LOCALES
 
 CONST nombrestagiaire :N <- 10
+VAR stagiaire :stagiaire
 VAR compteur :N 
 VAR tableau : stagiaire
 FIN VARIABLES LOCALES
