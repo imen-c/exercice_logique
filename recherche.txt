@@ -1,0 +1,30 @@
+
+
+
+DEBUT fonction cherchevaleur( IN tab[]: N , IN taille: N, IN val: N ) :N
+{
+VAR POS :N 
+VAR intervalle :N
+
+POUR cpt ALLANT DE 1 A tailleDIV2
+SI tab[taille/2]>val 
+	alors taille <- taille/2
+	
+	SINON
+	   
+		       SI tab[taille/2]<val
+	           alors taille <- taille -((taille/2)/2)
+			   FINSI
+FINSI
+
+SI tab[taille/2] = val
+				   alors POS <- cpt
+				   SINON 
+				   POS <- -1
+
+cpt SUIVANT
+
+
+AFFICHER POS
+}
+FIN cherchevaleur
